@@ -1,0 +1,17 @@
+<widget-empty-state>
+  
+  <h2 empty-state-title class="large-text-semibold">
+    {{ implementationState.title || "About" }}
+  </h2>
+  <p empty-state-content class="normal-text">
+    {{ implementationState.content || "This is a weather app created for Software Vulnerabilities Analysis." }}
+  </p>
+  <button
+    empty-state-action
+    mat-stroked-button
+    color="primary"
+    (click)="navigateToDashboard()"
+  >
+    {{ implementationState.buttonText }}
+  </button>
+</widget-empty-state>
